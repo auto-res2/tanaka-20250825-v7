@@ -1,0 +1,41 @@
+# Default configuration for RevCol-Diff experiments
+
+preprocess:
+  synthetic_preview:
+    image_size: 32
+    batch: 8
+  prepare_cifar10: false
+
+train:
+  - model: revcol
+    image_size: 32
+    batch_size: 8
+    steps: 120
+    lr: 0.001
+    base_ch: 64
+    K: 16
+    num_blocks: 2
+    patterns_train: [checker, blobs, stripes_h, radial]
+    patterns_val: [checker, stripes_v, blobs, noise]
+
+  - model: adm
+    image_size: 32
+    batch_size: 8
+    steps: 120
+    lr: 0.001
+    base_ch: 64
+    num_blocks: 2
+
+# Evaluation settings
+# E1: memory/compute trade-off; E3: ablation
+
+evaluate:
+  run_e1: true
+  e1_sizes: [32, 64]
+  e1_batches: [4, 8]
+  run_e3: true
+  e3:
+    image_size: 64
+    batch_size: 6
+    steps: 10
+    warmup: 3
