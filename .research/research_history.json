@@ -3,5 +3,25 @@
   "queries": [
     "memory efficient diffusion",
     "diffusion model architecture"
+  ],
+  "research_study_list": [
+    {
+      "title": "Hollowed Net for On-Device Personalization of Text-to-Image Diffusion Models"
+    },
+    {
+      "title": "SnapFusion: Text-to-Image Diffusion Model on Mobile Devices within Two Seconds"
+    },
+    {
+      "title": "Fast and Memory-Efficient Video Diffusion Using Streamlined Inference"
+    },
+    {
+      "title": "Score Approximation, Estimation and Distribution Recovery of Diffusion Models on Low-Dimensional Data"
+    },
+    {
+      "title": "Diffusion Models Beat GANs on Image Synthesis"
+    },
+    {
+      "title": "Diffusion Models Beat GANs on Image Synthesis"
+    }
   ]
 }
